@@ -134,10 +134,13 @@
         <ObjectProperty IRI="#hasHitterClassicStat"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasHitterSabermatrics"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPitcherBABIP"/>
+        <ObjectProperty IRI="#hasPitcherPosition"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPitcherSabermatrics"/>
@@ -155,10 +158,73 @@
         <ObjectProperty IRI="#hasTeam"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isOnATeam"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#age"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasHitterBABIPRate"/>
+        <DataProperty IRI="#hasBattingAverage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasERA"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHitterBABIPValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHitterIsoPValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHitterWARValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHold"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHomeRun"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInning"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPitcherBABIPValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPitcherFIPValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPitcherLPBValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPitcherWARValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPitcherWHIPValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRunBattedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRuns"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSave"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStolenBase"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWins"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#salary"/>
@@ -218,6 +284,13 @@
         <NamedIndividual IRI="#3rdBaseman"/>
     </Declaration>
     <EquivalentClasses>
+        <Class IRI="#BattingAverage"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasBattingAverage"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#DOOSANPlayer"/>
         <ObjectIntersectionOf>
             <Class IRI="#Player"/>
@@ -228,6 +301,13 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#ERA"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasERA"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#HANWHAPlayer"/>
         <ObjectIntersectionOf>
             <Class IRI="#Player"/>
@@ -236,6 +316,69 @@
                 <NamedIndividual IRI="#HANWHA"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HitterBABIP"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasHitterBABIPValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HitterIsoP"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasHitterIsoPValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HitterOBP"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasHitterOBPValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HitterOPS"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasHitterOPSValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HitterSLG"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasHitterSLGValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HitterWAR"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasHitterWARValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hold"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasHold"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HomeRun"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasHomeRun"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Inning"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasInning"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#KIAPlayer"/>
@@ -258,6 +401,55 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#PitcherBABIP"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPitcherBABIPValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PitcherFIP"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPitcherFIPValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PitcherLPB"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPitcherLPBValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PitcherWAR"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPitcherWARValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PitcherWHIP"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPitcherWHIPValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RunBattedIn"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasRunBattedIn"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Runs"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasRuns"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#SKPlayer"/>
         <ObjectIntersectionOf>
             <Class IRI="#Player"/>
@@ -266,6 +458,27 @@
                 <NamedIndividual IRI="#SK"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Save"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasSave"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StolenBase"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasStolenBase"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Wins"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasWins"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataAllValuesFrom>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#BattingAverage"/>
@@ -496,22 +709,29 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">25</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasHitterBABIPRate"/>
-        <NamedIndividual IRI="#kyuri"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.11</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#salary"/>
         <NamedIndividual IRI="#kyuri"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1000000000000000000000</Literal>
     </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#hasTeam"/>
+        <ObjectProperty IRI="#isOnATeam"/>
+    </EquivalentObjectProperties>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasHitterClassicStat"/>
         <ObjectProperty IRI="#hasClassicStat"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <ObjectProperty IRI="#hasPosition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasHitterSabermatrics"/>
         <ObjectProperty IRI="#hasSabermatrics"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPitcherPosition"/>
+        <ObjectProperty IRI="#hasPosition"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPitcherSabermatrics"/>
@@ -530,12 +750,16 @@
         <Class IRI="#Hitter"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasHitterSabermatrics"/>
         <Class IRI="#Hitter"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPitcherBABIP"/>
-        <Class IRI="#PitcherBABIP"/>
+        <ObjectProperty IRI="#hasPitcherPosition"/>
+        <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPitcherSabermatrics"/>
@@ -557,6 +781,10 @@
         <ObjectProperty IRI="#hasTeam"/>
         <Class IRI="#Player"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasClassicStat"/>
         <Class IRI="#ClassicStat"/>
@@ -566,15 +794,16 @@
         <Class IRI="#HitterStat"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <Class IRI="#Hitter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasHitterSabermatrics"/>
         <Class IRI="#HitterSabermatrics"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPitcherBABIP"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasHitterBABIPRate"/>
-            <Datatype abbreviatedIRI="xsd:float"/>
-        </DataAllValuesFrom>
+        <ObjectProperty IRI="#hasPitcherPosition"/>
+        <Class IRI="#Pitcher"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPitcherSabermatrics"/>
@@ -596,13 +825,101 @@
         <ObjectProperty IRI="#hasTeam"/>
         <Class IRI="#Team"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <ObjectProperty IRI="#hasPitcherPosition"/>
+    </DisjointObjectProperties>
     <DataPropertyDomain>
         <DataProperty IRI="#age"/>
         <Class IRI="#Player"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasHitterBABIPRate"/>
+        <DataProperty IRI="#hasBattingAverage"/>
+        <Class IRI="#BattingAverage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasERA"/>
+        <Class IRI="#ERA"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHitterBABIPValue"/>
         <Class IRI="#HitterBABIP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHitterIsoPValue"/>
+        <Class IRI="#HitterIsoP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+        <Class IRI="#HitterOBP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+        <Class IRI="#HitterOPS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+        <Class IRI="#HitterSLG"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHitterWARValue"/>
+        <Class IRI="#HitterWAR"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHold"/>
+        <Class IRI="#Hold"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHomeRun"/>
+        <Class IRI="#HomeRun"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasInning"/>
+        <Class IRI="#Inning"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPitcherBABIPValue"/>
+        <Class IRI="#PitcherBABIP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPitcherFIPValue"/>
+        <Class IRI="#PitcherFIP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPitcherLPBValue"/>
+        <Class IRI="#PitcherLPB"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPitcherWARValue"/>
+        <Class IRI="#PitcherWAR"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPitcherWHIPValue"/>
+        <Class IRI="#PitcherWHIP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRunBattedIn"/>
+        <Class IRI="#RunBattedIn"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRuns"/>
+        <Class IRI="#Runs"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSave"/>
+        <Class IRI="#Save"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStolenBase"/>
+        <Class IRI="#StolenBase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWins"/>
+        <Class IRI="#Wins"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#salary"/>
@@ -613,8 +930,84 @@
         <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasHitterBABIPRate"/>
+        <DataProperty IRI="#hasBattingAverage"/>
         <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasERA"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHitterBABIPValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHitterIsoPValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHitterWARValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHold"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHomeRun"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPitcherBABIPValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPitcherFIPValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPitcherLPBValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPitcherWARValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPitcherWHIPValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRunBattedIn"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRuns"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSave"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStolenBase"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWins"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#salary"/>
