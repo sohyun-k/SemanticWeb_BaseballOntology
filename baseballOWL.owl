@@ -23,22 +23,10 @@
         <Class IRI="#BattingAverage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Catcher"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CenterFielder"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ClassicStat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Closer"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#DOOSANPlayer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DesignatedHitter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ERA"/>
@@ -86,9 +74,6 @@
         <Class IRI="#KIAPlayer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LeftFielder"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#NEXENPlayer"/>
     </Declaration>
     <Declaration>
@@ -119,12 +104,6 @@
         <Class IRI="#Player"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Relief"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RightFielder"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#RunBattedIn"/>
     </Declaration>
     <Declaration>
@@ -140,12 +119,6 @@
         <Class IRI="#Save"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ShortStop"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#StartingPitcher"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#StolenBase"/>
     </Declaration>
     <Declaration>
@@ -153,15 +126,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Wins"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#1stBaseman"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#2ndBaseman"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#3rdBaseman"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasClassicStat"/>
@@ -200,7 +164,19 @@
         <DataProperty IRI="#salary"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Catcher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CenterFielder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Closer"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#DOOSAN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DesignatedHitter"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#HANWHA"/>
@@ -209,13 +185,37 @@
         <NamedIndividual IRI="#KIA"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LeftFielder"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#NEXEN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Relief"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RightFielder"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SK"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ShortStop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StartingPticher"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#kyuri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1stBaseman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2ndBaseman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3rdBaseman"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#DOOSANPlayer"/>
@@ -272,24 +272,8 @@
         <Class IRI="#HitterStat"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Catcher"/>
-        <Class IRI="#Hitter"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CenterFielder"/>
-        <Class IRI="#Hitter"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Closer"/>
-        <Class IRI="#Pitcher"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#DOOSANPlayer"/>
         <Class IRI="#Player"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DesignatedHitter"/>
-        <Class IRI="#Hitter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ERA"/>
@@ -352,10 +336,6 @@
         <Class IRI="#Player"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LeftFielder"/>
-        <Class IRI="#Hitter"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#NEXENPlayer"/>
         <Class IRI="#Player"/>
     </SubClassOf>
@@ -392,14 +372,6 @@
         <Class IRI="#PitcherSabermatrics"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Relief"/>
-        <Class IRI="#Pitcher"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RightFielder"/>
-        <Class IRI="#Hitter"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#RunBattedIn"/>
         <Class IRI="#HitterStat"/>
     </SubClassOf>
@@ -416,32 +388,12 @@
         <Class IRI="#PitcherStat"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ShortStop"/>
-        <Class IRI="#Hitter"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StartingPitcher"/>
-        <Class IRI="#Pitcher"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#StolenBase"/>
         <Class IRI="#HitterStat"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Wins"/>
         <Class IRI="#PitcherStat"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#1stBaseman"/>
-        <Class IRI="#Hitter"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#2ndBaseman"/>
-        <Class IRI="#Hitter"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#3rdBaseman"/>
-        <Class IRI="#Hitter"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#BattingAverage"/>
@@ -462,8 +414,24 @@
         <Class IRI="#Pitcher"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#Hitter"/>
+        <NamedIndividual IRI="#Catcher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hitter"/>
+        <NamedIndividual IRI="#CenterFielder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pitcher"/>
+        <NamedIndividual IRI="#Closer"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Team"/>
         <NamedIndividual IRI="#DOOSAN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hitter"/>
+        <NamedIndividual IRI="#DesignatedHitter"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Team"/>
@@ -474,20 +442,48 @@
         <NamedIndividual IRI="#KIA"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Hitter"/>
+        <NamedIndividual IRI="#LeftFielder"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Team"/>
         <NamedIndividual IRI="#NEXEN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pitcher"/>
+        <NamedIndividual IRI="#Relief"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hitter"/>
+        <NamedIndividual IRI="#RightFielder"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Team"/>
         <NamedIndividual IRI="#SK"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Hitter"/>
+        <NamedIndividual IRI="#ShortStop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pitcher"/>
+        <NamedIndividual IRI="#StartingPticher"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#DOOSANPlayer"/>
         <NamedIndividual IRI="#kyuri"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#1stBaseman"/>
-        <NamedIndividual IRI="#kyuri"/>
+        <Class IRI="#Hitter"/>
+        <NamedIndividual IRI="#1stBaseman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hitter"/>
+        <NamedIndividual IRI="#2ndBaseman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hitter"/>
+        <NamedIndividual IRI="#3rdBaseman"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasTeam"/>
