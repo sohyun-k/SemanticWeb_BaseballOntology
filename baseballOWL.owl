@@ -17,6 +17,9 @@
         <Literal>Baseball ontology that describes analysis of players based on classic stat and sabermatrics.</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#BadPlayer"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#BaseballPosition"/>
     </Declaration>
     <Declaration>
@@ -30,6 +33,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ERA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EvaluatedPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoodPlayer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HANWHAPlayer"/>
@@ -53,7 +62,7 @@
         <Class IRI="#HitterSLG"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HitterSabermatrics"/>
+        <Class IRI="#HitterSabermetrics"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HitterStat"/>
@@ -89,7 +98,7 @@
         <Class IRI="#PitcherLPB"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PitcherSabermatrics"/>
+        <Class IRI="#PitcherSabermetrics"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PitcherStat"/>
@@ -137,13 +146,13 @@
         <ObjectProperty IRI="#hasHitterPosition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasHitterSabermatrics"/>
+        <ObjectProperty IRI="#hasHitterSabermetrics"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPitcherPosition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPitcherSabermatrics"/>
+        <ObjectProperty IRI="#hasPitcherSabermetrics"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPithcerClassicStat"/>
@@ -152,7 +161,7 @@
         <ObjectProperty IRI="#hasPosition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasSabermatrics"/>
+        <ObjectProperty IRI="#hasSabermetrics"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTeam"/>
@@ -230,10 +239,16 @@
         <DataProperty IRI="#salary"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ByungHoPark"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Catcher"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CenterFielder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChiHongAn"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Closer"/>
@@ -245,10 +260,34 @@
         <NamedIndividual IRI="#DesignatedHitter"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#DongMinHan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EuiJiYang"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#HANWHA"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#HaSeongKim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JeongChoi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#KIA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KunWooPark"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LeftFielder"/>
@@ -269,10 +308,13 @@
         <NamedIndividual IRI="#ShortStop"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#StartingPticher"/>
+        <NamedIndividual IRI="#StartingPitcher"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#kyuri"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WooRamJung"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#1stBaseman"/>
@@ -481,6 +523,10 @@
         </DataAllValuesFrom>
     </EquivalentClasses>
     <SubClassOf>
+        <Class IRI="#BadPlayer"/>
+        <Class IRI="#EvaluatedPlayer"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BattingAverage"/>
         <Class IRI="#HitterStat"/>
     </SubClassOf>
@@ -493,6 +539,10 @@
         <Class IRI="#PitcherStat"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GoodPlayer"/>
+        <Class IRI="#EvaluatedPlayer"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HANWHAPlayer"/>
         <Class IRI="#Player"/>
     </SubClassOf>
@@ -502,26 +552,26 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HitterBABIP"/>
-        <Class IRI="#HitterSabermatrics"/>
+        <Class IRI="#HitterSabermetrics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HitterIsoP"/>
-        <Class IRI="#HitterSabermatrics"/>
+        <Class IRI="#HitterSabermetrics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HitterOBP"/>
-        <Class IRI="#HitterSabermatrics"/>
+        <Class IRI="#HitterSabermetrics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HitterOPS"/>
-        <Class IRI="#HitterSabermatrics"/>
+        <Class IRI="#HitterSabermetrics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HitterSLG"/>
-        <Class IRI="#HitterSabermatrics"/>
+        <Class IRI="#HitterSabermetrics"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#HitterSabermatrics"/>
+        <Class IRI="#HitterSabermetrics"/>
         <Class IRI="#Sabermatrics"/>
     </SubClassOf>
     <SubClassOf>
@@ -530,7 +580,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HitterWAR"/>
-        <Class IRI="#HitterSabermatrics"/>
+        <Class IRI="#HitterSabermetrics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hold"/>
@@ -558,18 +608,18 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PitcherBABIP"/>
-        <Class IRI="#PitcherSabermatrics"/>
+        <Class IRI="#PitcherSabermetrics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PitcherFIP"/>
-        <Class IRI="#PitcherSabermatrics"/>
+        <Class IRI="#PitcherSabermetrics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PitcherLPB"/>
-        <Class IRI="#PitcherSabermatrics"/>
+        <Class IRI="#PitcherSabermetrics"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PitcherSabermatrics"/>
+        <Class IRI="#PitcherSabermetrics"/>
         <Class IRI="#Sabermatrics"/>
     </SubClassOf>
     <SubClassOf>
@@ -578,11 +628,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PitcherWAR"/>
-        <Class IRI="#PitcherSabermatrics"/>
+        <Class IRI="#PitcherSabermetrics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PitcherWHIP"/>
-        <Class IRI="#PitcherSabermatrics"/>
+        <Class IRI="#PitcherSabermetrics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RunBattedIn"/>
@@ -609,6 +659,10 @@
         <Class IRI="#PitcherStat"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="#BadPlayer"/>
+        <Class IRI="#GoodPlayer"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#BattingAverage"/>
         <Class IRI="#HomeRun"/>
         <Class IRI="#RunBattedIn"/>
@@ -627,12 +681,20 @@
         <Class IRI="#Pitcher"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#NEXENPlayer"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Hitter"/>
         <NamedIndividual IRI="#Catcher"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Hitter"/>
         <NamedIndividual IRI="#CenterFielder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIAPlayer"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Pitcher"/>
@@ -647,12 +709,44 @@
         <NamedIndividual IRI="#DesignatedHitter"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SKPlayer"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DOOSANPlayer"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Team"/>
         <NamedIndividual IRI="#HANWHA"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#NEXENPlayer"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIAPlayer"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIAPlayer"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SKPlayer"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DOOSANPlayer"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Team"/>
         <NamedIndividual IRI="#KIA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DOOSANPlayer"/>
+        <NamedIndividual IRI="#KunWooPark"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Hitter"/>
@@ -680,11 +774,15 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Pitcher"/>
-        <NamedIndividual IRI="#StartingPticher"/>
+        <NamedIndividual IRI="#StartingPitcher"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#DOOSANPlayer"/>
-        <NamedIndividual IRI="#kyuri"/>
+        <Class IRI="#HANWHAPlayer"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HANWHAPlayer"/>
+        <NamedIndividual IRI="#WooRamJung"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Hitter"/>
@@ -699,19 +797,804 @@
         <NamedIndividual IRI="#3rdBaseman"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <NamedIndividual IRI="#1stBaseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <NamedIndividual IRI="#1stBaseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasTeam"/>
-        <NamedIndividual IRI="#kyuri"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <NamedIndividual IRI="#NEXEN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <NamedIndividual IRI="#NEXEN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <NamedIndividual IRI="#2ndBaseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <NamedIndividual IRI="#2ndBaseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <NamedIndividual IRI="#KIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <NamedIndividual IRI="#KIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <NamedIndividual IRI="#RightFielder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <NamedIndividual IRI="#RightFielder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <NamedIndividual IRI="#SK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <NamedIndividual IRI="#SK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <NamedIndividual IRI="#Catcher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <NamedIndividual IRI="#Catcher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
         <NamedIndividual IRI="#DOOSAN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <NamedIndividual IRI="#DOOSAN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <NamedIndividual IRI="#ShortStop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <NamedIndividual IRI="#ShortStop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <NamedIndividual IRI="#NEXEN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <NamedIndividual IRI="#NEXEN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPitcherPosition"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <NamedIndividual IRI="#StartingPitcher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <NamedIndividual IRI="#StartingPitcher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <NamedIndividual IRI="#KIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <NamedIndividual IRI="#KIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <NamedIndividual IRI="#LeftFielder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <NamedIndividual IRI="#LeftFielder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <NamedIndividual IRI="#KIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <NamedIndividual IRI="#KIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <NamedIndividual IRI="#3rdBaseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <NamedIndividual IRI="#3rdBaseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <NamedIndividual IRI="#SK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <NamedIndividual IRI="#SK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <NamedIndividual IRI="#DesignatedHitter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <NamedIndividual IRI="#DesignatedHitter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <NamedIndividual IRI="#DOOSAN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <NamedIndividual IRI="#DOOSAN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHitterPosition"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <NamedIndividual IRI="#CenterFielder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <NamedIndividual IRI="#CenterFielder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <NamedIndividual IRI="#DOOSAN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <NamedIndividual IRI="#DOOSAN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPitcherPosition"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+        <NamedIndividual IRI="#Relief"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+        <NamedIndividual IRI="#Relief"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+        <NamedIndividual IRI="#HANWHA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+        <NamedIndividual IRI="#HANWHA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPitcherPosition"/>
+        <NamedIndividual IRI="#WooRamJung"/>
+        <NamedIndividual IRI="#Closer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPosition"/>
+        <NamedIndividual IRI="#WooRamJung"/>
+        <NamedIndividual IRI="#Closer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#WooRamJung"/>
+        <NamedIndividual IRI="#HANWHA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOnATeam"/>
+        <NamedIndividual IRI="#WooRamJung"/>
+        <NamedIndividual IRI="#HANWHA"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
-        <NamedIndividual IRI="#kyuri"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">25</Literal>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBattingAverage"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.457</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.175</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.718</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterWARValue"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.62</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHomeRun"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">43</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRunBattedIn"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">112</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRuns"/>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">138</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#salary"/>
-        <NamedIndividual IRI="#kyuri"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1000000000000000000000</Literal>
+        <NamedIndividual IRI="#ByungHoPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBattingAverage"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.342</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.392</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.954</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.563</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterWARValue"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.98</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHomeRun"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRunBattedIn"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">118</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRuns"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">169</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#ChiHongAn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBattingAverage"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.284</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.367</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.967</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.601</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterWARValue"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHomeRun"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRunBattedIn"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">115</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRuns"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">138</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#DongMinHan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBattingAverage"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.358</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.427</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.585</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterWARValue"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHomeRun"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRunBattedIn"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">77</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRuns"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">157</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#EuiJiYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBattingAverage"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.288</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.358</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.832</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.474</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterWARValue"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHomeRun"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRunBattedIn"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">84</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRuns"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">147</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#HaSeongKim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasERA"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInning"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">184.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPitcherFIPValue"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPitcherWARValue"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPitcherWHIPValue"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWins"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#HyeonJongYang"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">23.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBattingAverage"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.339</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.414</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.963</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.549</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterWARValue"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.94</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHomeRun"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRunBattedIn"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">103</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRuns"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">179</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#HyoungWooChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBattingAverage"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.244</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.368</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.915</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.547</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterWARValue"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.52</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHomeRun"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRunBattedIn"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">74</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRuns"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#JeongChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBattingAverage"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.333</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.397</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.979</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.582</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterWARValue"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.66</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHomeRun"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRunBattedIn"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">108</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRuns"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">173</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#JuHwanChoi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBattingAverage"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.326</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOBPValue"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.373</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterOPSValue"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.847</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterSLGValue"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.473</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterWARValue"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHomeRun"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRunBattedIn"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">84</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRuns"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">159</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#KunWooPark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasERA"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.84</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHold"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPitcherFIPValue"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPitcherWARValue"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.63</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPitcherWHIPValue"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#TaeYangLee"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.73</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#WooRamJung"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasERA"/>
+        <NamedIndividual IRI="#WooRamJung"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPitcherFIPValue"/>
+        <NamedIndividual IRI="#WooRamJung"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.93</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPitcherWARValue"/>
+        <NamedIndividual IRI="#WooRamJung"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.02</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPitcherWHIPValue"/>
+        <NamedIndividual IRI="#WooRamJung"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSave"/>
+        <NamedIndividual IRI="#WooRamJung"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#WooRamJung"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.0</Literal>
     </DataPropertyAssertion>
     <EquivalentObjectProperties>
         <ObjectProperty IRI="#hasTeam"/>
@@ -726,16 +1609,16 @@
         <ObjectProperty IRI="#hasPosition"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasHitterSabermatrics"/>
-        <ObjectProperty IRI="#hasSabermatrics"/>
+        <ObjectProperty IRI="#hasHitterSabermetrics"/>
+        <ObjectProperty IRI="#hasSabermetrics"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPitcherPosition"/>
         <ObjectProperty IRI="#hasPosition"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasPitcherSabermatrics"/>
-        <ObjectProperty IRI="#hasSabermatrics"/>
+        <ObjectProperty IRI="#hasPitcherSabermetrics"/>
+        <ObjectProperty IRI="#hasSabermetrics"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPithcerClassicStat"/>
@@ -747,34 +1630,34 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasHitterClassicStat"/>
-        <Class IRI="#Hitter"/>
+        <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasHitterPosition"/>
         <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasHitterSabermatrics"/>
-        <Class IRI="#Hitter"/>
+        <ObjectProperty IRI="#hasHitterSabermetrics"/>
+        <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPitcherPosition"/>
         <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPitcherSabermatrics"/>
-        <Class IRI="#Pitcher"/>
+        <ObjectProperty IRI="#hasPitcherSabermetrics"/>
+        <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPithcerClassicStat"/>
-        <Class IRI="#Pitcher"/>
+        <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPosition"/>
         <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSabermatrics"/>
+        <ObjectProperty IRI="#hasSabermetrics"/>
         <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -798,16 +1681,16 @@
         <Class IRI="#Hitter"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasHitterSabermatrics"/>
-        <Class IRI="#HitterSabermatrics"/>
+        <ObjectProperty IRI="#hasHitterSabermetrics"/>
+        <Class IRI="#HitterSabermetrics"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPitcherPosition"/>
         <Class IRI="#Pitcher"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPitcherSabermatrics"/>
-        <Class IRI="#PitcherSabermatrics"/>
+        <ObjectProperty IRI="#hasPitcherSabermetrics"/>
+        <Class IRI="#PitcherSabermetrics"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPithcerClassicStat"/>
@@ -818,7 +1701,7 @@
         <Class IRI="#BaseballPosition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSabermatrics"/>
+        <ObjectProperty IRI="#hasSabermetrics"/>
         <Class IRI="#Sabermatrics"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1011,7 +1894,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#salary"/>
-        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
 </Ontology>
 
