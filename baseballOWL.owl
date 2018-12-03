@@ -122,7 +122,7 @@
         <Class IRI="#SKPlayer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sabermatrics"/>
+        <Class IRI="#Sabermetrics"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Save"/>
@@ -572,7 +572,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HitterSabermetrics"/>
-        <Class IRI="#Sabermatrics"/>
+        <Class IRI="#Sabermetrics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HitterStat"/>
@@ -620,7 +620,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PitcherSabermetrics"/>
-        <Class IRI="#Sabermatrics"/>
+        <Class IRI="#Sabermetrics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PitcherStat"/>
@@ -1702,7 +1702,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSabermetrics"/>
-        <Class IRI="#Sabermatrics"/>
+        <Class IRI="#Sabermetrics"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTeam"/>
@@ -1896,6 +1896,171 @@
         <DataProperty IRI="#salary"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BaseballPosition</IRI>
+        <Literal xml:lang="en">BaseballPosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BattingAverage</IRI>
+        <Literal xml:lang="en">BattingAverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ClassicStat</IRI>
+        <Literal xml:lang="en">ClassicStat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DOOSANPlayer</IRI>
+        <Literal xml:lang="en">DOOSANPlayer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ERA</IRI>
+        <Literal xml:lang="en">ERA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HANWHAPlayer</IRI>
+        <Literal xml:lang="en">HANWHAPlayer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hitter</IRI>
+        <Literal xml:lang="en">Hitter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HitterBABIP</IRI>
+        <Literal xml:lang="en">HitterBABIP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HitterIsoP</IRI>
+        <Literal xml:lang="en">HitterIsoP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HitterOBP</IRI>
+        <Literal xml:lang="en">HitterOBP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HitterOPS</IRI>
+        <Literal xml:lang="en">HitterOPS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HitterSLG</IRI>
+        <Literal xml:lang="en">HitterSLG</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HitterSabermetrics</IRI>
+        <Literal xml:lang="en">HitterSabermetrics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HitterStat</IRI>
+        <Literal xml:lang="en">HitterStat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HitterWAR</IRI>
+        <Literal xml:lang="en">HitterWAR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hold</IRI>
+        <Literal xml:lang="en">Hold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HomeRun</IRI>
+        <Literal xml:lang="en">HomeRun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Inning</IRI>
+        <Literal xml:lang="en">Inning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KIAPlayer</IRI>
+        <Literal xml:lang="en">KIAPlayer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NEXENPlayer</IRI>
+        <Literal xml:lang="en">NEXENPlayer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pitcher</IRI>
+        <Literal xml:lang="en">Pitcher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PitcherBABIP</IRI>
+        <Literal xml:lang="en">PitcherBABIP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PitcherFIP</IRI>
+        <Literal xml:lang="en">PitcherFIP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PitcherSabermetrics</IRI>
+        <Literal xml:lang="en">PitcherSabermetrics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PitcherStat</IRI>
+        <Literal xml:lang="en">PitcherStat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Player</IRI>
+        <Literal xml:lang="en">Player</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RunBattedIn</IRI>
+        <Literal xml:lang="en">RunBattedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Runs</IRI>
+        <Literal xml:lang="en">Runs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SKPlayer</IRI>
+        <Literal xml:lang="en">SKPlayer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sabermetrics</IRI>
+        <Literal xml:lang="en">Sabermetrics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Save</IRI>
+        <Literal xml:lang="en">Save</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StolenBase</IRI>
+        <Literal xml:lang="en">StolenBase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Wins</IRI>
+        <Literal xml:lang="en">Wins</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
