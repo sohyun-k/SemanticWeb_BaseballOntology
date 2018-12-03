@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/kkr/ontologies/2018/9/baseball"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/kkr/ontologies/2018/9/baseball">
+    <Prefix name="" IRI="http://www.semanticweb.org/kkr/ontologies/2018/9/baseball"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Baseball ontology that describes analysis of players based on classic stat and sabermatrics.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#BaseballPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BattingAverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Catcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CenterFielder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassicStat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Closer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DOOSANPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesignatedHitter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ERA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HANWHAPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hitter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HitterBABIP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HitterIsoP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HitterOBP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HitterOPS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HitterSLG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HitterSabermatrics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HitterStat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HitterWAR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HomeRun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIAPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeftFielder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NEXENPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pitcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PitcherBABIP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PitcherFIP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PitcherLPB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PitcherSabermatrics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PitcherStat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PitcherWAR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PitcherWHIP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightFielder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RunBattedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Runs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SKPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sabermatrics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Save"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShortStop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StartingPitcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StolenBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1stBaseman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2ndBaseman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3rdBaseman"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClassicStat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHitterClassicStat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHitterSabermatrics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPitcherBABIP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPitcherSabermatrics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPithcerClassicStat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSabermatrics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTeam"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHitterBABIPRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#salary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DOOSAN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HANWHA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KIA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NEXEN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kyuri"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#DOOSANPlayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Player"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasTeam"/>
+                <NamedIndividual IRI="#DOOSAN"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HANWHAPlayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Player"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasTeam"/>
+                <NamedIndividual IRI="#HANWHA"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#KIAPlayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Player"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasTeam"/>
+                <NamedIndividual IRI="#KIA"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NEXENPlayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Player"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasTeam"/>
+                <NamedIndividual IRI="#NEXEN"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SKPlayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Player"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasTeam"/>
+                <NamedIndividual IRI="#SK"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#BattingAverage"/>
+        <Class IRI="#HitterStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Catcher"/>
+        <Class IRI="#Hitter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CenterFielder"/>
+        <Class IRI="#Hitter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Closer"/>
+        <Class IRI="#Pitcher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DOOSANPlayer"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesignatedHitter"/>
+        <Class IRI="#Hitter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ERA"/>
+        <Class IRI="#PitcherStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HANWHAPlayer"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hitter"/>
+        <Class IRI="#BaseballPosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HitterBABIP"/>
+        <Class IRI="#HitterSabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HitterIsoP"/>
+        <Class IRI="#HitterSabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HitterOBP"/>
+        <Class IRI="#HitterSabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HitterOPS"/>
+        <Class IRI="#HitterSabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HitterSLG"/>
+        <Class IRI="#HitterSabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HitterSabermatrics"/>
+        <Class IRI="#Sabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HitterStat"/>
+        <Class IRI="#ClassicStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HitterWAR"/>
+        <Class IRI="#HitterSabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hold"/>
+        <Class IRI="#PitcherStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HomeRun"/>
+        <Class IRI="#HitterStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inning"/>
+        <Class IRI="#PitcherStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIAPlayer"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeftFielder"/>
+        <Class IRI="#Hitter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NEXENPlayer"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pitcher"/>
+        <Class IRI="#BaseballPosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PitcherBABIP"/>
+        <Class IRI="#PitcherSabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PitcherFIP"/>
+        <Class IRI="#PitcherSabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PitcherLPB"/>
+        <Class IRI="#PitcherSabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PitcherSabermatrics"/>
+        <Class IRI="#Sabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PitcherStat"/>
+        <Class IRI="#ClassicStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PitcherWAR"/>
+        <Class IRI="#PitcherSabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PitcherWHIP"/>
+        <Class IRI="#PitcherSabermatrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relief"/>
+        <Class IRI="#Pitcher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RightFielder"/>
+        <Class IRI="#Hitter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RunBattedIn"/>
+        <Class IRI="#HitterStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Runs"/>
+        <Class IRI="#HitterStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SKPlayer"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Save"/>
+        <Class IRI="#PitcherStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShortStop"/>
+        <Class IRI="#Hitter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StartingPitcher"/>
+        <Class IRI="#Pitcher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StolenBase"/>
+        <Class IRI="#HitterStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wins"/>
+        <Class IRI="#PitcherStat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1stBaseman"/>
+        <Class IRI="#Hitter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2ndBaseman"/>
+        <Class IRI="#Hitter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3rdBaseman"/>
+        <Class IRI="#Hitter"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BattingAverage"/>
+        <Class IRI="#HomeRun"/>
+        <Class IRI="#RunBattedIn"/>
+        <Class IRI="#Runs"/>
+        <Class IRI="#StolenBase"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DOOSANPlayer"/>
+        <Class IRI="#HANWHAPlayer"/>
+        <Class IRI="#KIAPlayer"/>
+        <Class IRI="#NEXENPlayer"/>
+        <Class IRI="#SKPlayer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hitter"/>
+        <Class IRI="#Pitcher"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#DOOSAN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#HANWHA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#KIA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#NEXEN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#SK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DOOSANPlayer"/>
+        <NamedIndividual IRI="#kyuri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#1stBaseman"/>
+        <NamedIndividual IRI="#kyuri"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#kyuri"/>
+        <NamedIndividual IRI="#DOOSAN"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#kyuri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHitterBABIPRate"/>
+        <NamedIndividual IRI="#kyuri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#kyuri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1000000000000000000000</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHitterClassicStat"/>
+        <ObjectProperty IRI="#hasClassicStat"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHitterSabermatrics"/>
+        <ObjectProperty IRI="#hasSabermatrics"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPitcherSabermatrics"/>
+        <ObjectProperty IRI="#hasSabermatrics"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPithcerClassicStat"/>
+        <ObjectProperty IRI="#hasClassicStat"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasClassicStat"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHitterClassicStat"/>
+        <Class IRI="#Hitter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHitterSabermatrics"/>
+        <Class IRI="#Hitter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPitcherBABIP"/>
+        <Class IRI="#PitcherBABIP"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPitcherSabermatrics"/>
+        <Class IRI="#Pitcher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPithcerClassicStat"/>
+        <Class IRI="#Pitcher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPosition"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSabermatrics"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTeam"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasClassicStat"/>
+        <Class IRI="#ClassicStat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHitterClassicStat"/>
+        <Class IRI="#HitterStat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHitterSabermatrics"/>
+        <Class IRI="#HitterSabermatrics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPitcherBABIP"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasHitterBABIPRate"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPitcherSabermatrics"/>
+        <Class IRI="#PitcherSabermatrics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPithcerClassicStat"/>
+        <Class IRI="#PitcherStat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPosition"/>
+        <Class IRI="#BaseballPosition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSabermatrics"/>
+        <Class IRI="#Sabermatrics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTeam"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHitterBABIPRate"/>
+        <Class IRI="#HitterBABIP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#salary"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#age"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHitterBABIPRate"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#salary"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
