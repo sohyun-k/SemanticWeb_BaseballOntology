@@ -659,8 +659,38 @@
         <Class IRI="#SKPlayer"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#ERA"/>
+        <Class IRI="#Hold"/>
+        <Class IRI="#Inning"/>
+        <Class IRI="#Save"/>
+        <Class IRI="#Wins"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Hitter"/>
         <Class IRI="#Pitcher"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HitterBABIP"/>
+        <Class IRI="#HitterIsoP"/>
+        <Class IRI="#HitterOBP"/>
+        <Class IRI="#HitterOPS"/>
+        <Class IRI="#HitterSLG"/>
+        <Class IRI="#HitterWAR"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HitterSabermetrics"/>
+        <Class IRI="#PitcherSabermetrics"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HitterStat"/>
+        <Class IRI="#PitcherStat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PitcherBABIP"/>
+        <Class IRI="#PitcherFIP"/>
+        <Class IRI="#PitcherLPB"/>
+        <Class IRI="#PitcherWAR"/>
+        <Class IRI="#PitcherWHIP"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#NEXENPlayer"/>
