@@ -17,9 +17,6 @@
         <Literal>Baseball ontology that describes analysis of players based on classic stat and sabermatrics.</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#BadPlayer"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#BaseballPosition"/>
     </Declaration>
     <Declaration>
@@ -33,12 +30,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ERA"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EvaluatedPlayer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GoodPlayer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HANWHAPlayer"/>
@@ -526,10 +517,6 @@
         </DataAllValuesFrom>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="#BadPlayer"/>
-        <Class IRI="#EvaluatedPlayer"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#BattingAverage"/>
         <Class IRI="#HitterStat"/>
     </SubClassOf>
@@ -540,10 +527,6 @@
     <SubClassOf>
         <Class IRI="#ERA"/>
         <Class IRI="#PitcherStat"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GoodPlayer"/>
-        <Class IRI="#EvaluatedPlayer"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HANWHAPlayer"/>
@@ -661,10 +644,6 @@
         <Class IRI="#Wins"/>
         <Class IRI="#PitcherStat"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#BadPlayer"/>
-        <Class IRI="#GoodPlayer"/>
-    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#BattingAverage"/>
         <Class IRI="#HomeRun"/>
