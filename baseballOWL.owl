@@ -158,6 +158,9 @@
         <ObjectProperty IRI="#hasPithcerClassicStat"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasPlayer"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasPosition"/>
     </Declaration>
     <Declaration>
@@ -2005,11 +2008,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PitcherBABIP</IRI>
         <Literal xml:lang="en">PitcherBABIP</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#PitcherFIP</IRI>
-        <Literal xml:lang="en">PitcherFIP</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
